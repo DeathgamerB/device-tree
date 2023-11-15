@@ -23,11 +23,6 @@ $(call inherit-product, vendor/nothing/camera/nothing-camera.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-# RRO (pixys)
-PRODUCT_PACKAGES += \
-    PixysFrameworksSpacewar \
-    PixysSystemUISpacewar
-
 # RRO (Spacewar)
 PRODUCT_PACKAGES += \
     SpacewarCarrierConfig \
