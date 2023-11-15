@@ -23,7 +23,7 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := pixys_Spacewar
+PRODUCT_NAME := potato_Spacewar
 PRODUCT_DEVICE := Spacewar
 PRODUCT_BRAND := Nothing
 PRODUCT_MODEL := A063
@@ -38,3 +38,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-nothing
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=Spacewar \
     TARGET_PRODUCT=Spacewar
+
+# Inherit from Potato vendor
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
